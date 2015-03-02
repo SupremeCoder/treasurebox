@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.1.2"
 
 gem 'rails', '4.1.5'
 gem 'sass-rails', '~> 4.0.3'
@@ -20,11 +20,7 @@ group :production do
 	gem 'rails_12factor'
 end
 
-group :development do
-	gem 'sqlite3'
-end
-
-group :test do
+group :development, :test do
 	gem 'sqlite3'
 end
 
