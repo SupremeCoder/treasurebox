@@ -14,16 +14,15 @@ gem "paperclip", "~> 4.2"
 gem "paperclip-dropbox", ">= 1.1.7"
 gem "figaro"
 gem 'devise'
-gem 'sqlite3'
 
-#group :production do
-#	gem 'pg'
-#	gem 'rails_12factor'
-#end
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
 
-#group :development, :test do
-#	gem 'sqlite3'
-#end
+group :development, :test do
+	gem 'sqlite3'
+end
 
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
